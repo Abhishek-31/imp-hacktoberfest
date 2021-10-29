@@ -41,7 +41,7 @@ app.get('/ViewRequest', function (req, res) {
 app.post('/ViewRequestDetail', function (req, res) {
 	RequestIndex = req.body.hdnRequestIndex;
 	InstitutionName = req.body.hdnInstitutionName;
-	var data = {ContractAddress:ContractAddress,RequestIndex:RequestIndex,InstitutionName:InstitutionName};
+	var data = {ContractAddress:ContractAddress, RequestIndex:RequestIndex, InstitutionName:InstitutionName};
 	res.render("ViewRequestDetail",data);
 })
 
@@ -58,7 +58,7 @@ app.get('/ViewRequest_Org', function (req, res) {
 app.post('/ViewRequestDetail_Org', function (req, res) {
 	RequestIndex = req.body.hdnRequestIndex;
 	InstitutionName = req.body.hdnInstitutionName;
-	var data = {ContractAddress:ContractAddress,RequestIndex:RequestIndex,InstitutionName:InstitutionName};
+	var data = {ContractAddress:ContractAddress, RequestIndex:RequestIndex, InstitutionName:InstitutionName};
 	res.render("ViewRequestDetail_Org",data);
 })
 
